@@ -36,3 +36,5 @@ if st.button("Predict Survied Or Not "):
     result = clf.predict(
         np.array([[age,fare,fs,pc,bc,1,1,1]]))
     st.text(result[0])
+
+st.markdown("Develope By Avinash Pawar at NIELIT Daman")

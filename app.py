@@ -14,7 +14,7 @@ def predict(data):
 st.title("Titanic Survival Prediction using Machin Learning")
 st.markdown("This Model Identify weather people survived or not")
 
-st.header("Traveler Details")
+st.header("Passenger Details")
 col1,col2 = st.columns(2)
 
 with col1:

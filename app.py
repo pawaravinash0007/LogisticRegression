@@ -11,8 +11,7 @@ def predict(data):
     return clf.predict(data)
 
 
-st.title("Develope By Avinash Pawar")
-st.title("Titanic People Status Model")
+st.title("Titanic Survival Prediction using Machin Learning")
 st.markdown("This Model Identify weather people survived or not")
 
 st.header("Traveler Details")

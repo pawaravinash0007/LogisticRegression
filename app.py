@@ -11,7 +11,7 @@ def predict(data):
     return clf.predict(data)
 
 
-st.title("Titanic Survival Prediction using Machin Learning")
+st.title("Titanic Survival Prediction using Machine Learning")
 st.markdown("This Model Identify weather people survived or not")
 
 st.header("Passenger Details")
@@ -37,4 +37,4 @@ if st.button("Predict Survied Or Not "):
         np.array([[age,fare,fs,pc,bc,1,1,1]]))
     st.text(result[0])
 
-st.markdown("Develope By Avinash Pawar at NIELIT Daman")
+st.markdown("Developed By Avinash Pawar at NIELIT Daman")

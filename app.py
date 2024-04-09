@@ -26,10 +26,17 @@ with col1:
 	fs = st.slider("Family Size", 1,10,2)
 with col2:
 	st.text("class 1: First, 2: 2nd,3:3rd")
-	pc=st.selectbox("Passenger Class:",[1,2,3])
+	pc=st.selectbox("Passenger Class:",["First","Second","Third"])
 	st.text("Boarding From 1:Chernourg , 2:Queenstown ,3:Southhampton")
 	bc=st.selectbox("Boarding From:",[1,2,3])
 
+pc_first, pc_second, pc_third = 0, 0, 0 
+if pc == 'First': 
+  pc_first = 1 
+elif island == 'Second': 
+  pc_second = 1 
+elif island == 'Third': 
+  pc_third = 1 
 
 st.text('')
 if st.button("Predict Survied Or Not "):

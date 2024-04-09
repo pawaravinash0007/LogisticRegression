@@ -30,18 +30,11 @@ with col2:
 	st.text("Boarding From 1:Chernourg , 2:Queenstown ,3:Southhampton")
 	bc=st.selectbox("Boarding From:",[1,2,3])
 
-pc_first, pc_second, pc_third = 0, 0, 0 
-if pc == 'First': 
-  pc_first = 1 
-elif pc == 'Second': 
-  pc_second = 1 
-elif pc == 'Third': 
-  pc_third = 1 
 
 st.text('')
 if st.button("Predict Survied Or Not "):
     result = clf.predict(
-        np.array([[age,fare,fs,pc_first,pc_second,pc_third,bc,1,1,1]]))
+        np.array([[age,fare,fs,pc,bc,1,1,1]]))
     st.text(result[0])
 
 st.markdown("Developed By Avinash Pawar at NIELIT Daman")

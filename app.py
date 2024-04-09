@@ -33,9 +33,9 @@ with col2:
 pc_first, pc_second, pc_third = 0, 0, 0 
 if pc == 'First': 
   pc_first = 1 
-elif island == 'Second': 
+elif pc == 'Second': 
   pc_second = 1 
-elif island == 'Third': 
+elif pc == 'Third': 
   pc_third = 1 
 
 st.text('')
